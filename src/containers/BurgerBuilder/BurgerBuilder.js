@@ -25,13 +25,13 @@ class BurgerBuilder extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://myburger-72558.firebaseio.com/ingredients.json')
-            .then(response => {
-                this.setState({ ingredients: response.data });
-            })
-            .catch(error => {
-                this.setState({error: true});
-            })
+        // axios.get('https://myburger-72558.firebaseio.com/ingredients.json')
+        //     .then(response => {
+        //         this.setState({ ingredients: response.data });
+        //     })
+        //     .catch(error => {
+        //         this.setState({error: true});
+        //     })
     }
     addIngredientHandler = (type) => {
         const oldIngredientCount = this.state.ingredients[type];
