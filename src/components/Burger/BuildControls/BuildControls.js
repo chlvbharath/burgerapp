@@ -26,8 +26,9 @@ const buildControls = (props) => (
         <button 
         className={classes.OrderButton}
         disabled = {!props.purchasable}
-        onClick = {props.addToCart}
-        >ORDER</button>
+        onClick = {props.addToCart}>
+            {props.isAuth ? 'ORDER' : 'SIGN'}
+        </button>
     </div>
 )
 export default buildControls;
